@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package pb;
+
+
+//分钟数据
+message MinData  {
+    //偏移量
+    uint32 	Offset	=	1;
+	//时间(HHMM)
+	uint32 	Moment	=	2;
+	//价格 单位：元
+	float Price		=	3;
+	//均价
+	float Ave_price	=	4;
+	//成交量
+	double Volume	=	5;
+	//开盘
+	float Open		=	6;
+	//最高
+	float High		=	7;
+	//最低
+	float Low		=	8;
+	//收盘
+	float Close		=	9;	
+	//是否保存
+	int32 IsWrite	=	10;
+}
+
